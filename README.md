@@ -8,10 +8,8 @@ object literal in the hero, JSON-style skills, `.env`-style contact info).
 ```
 portfolio/
 ├── index.html
-├── css/
-│   └── style.css
-└── js/
-    └── script.js
+├── style.css
+└── script.js
 ```
 
 ## Sections
@@ -28,35 +26,9 @@ portfolio/
 4. Copy-email-to-clipboard button
 5. Front-end contact form validation (name, email format, message length)
 
-## Before you submit this task
-
-1. **Replace placeholder content**
-   - Swap the 3 sample projects in `index.html` (`#projects`) with your own,
-     and update each `Live Demo` / `Source` link.
-   - Update `EMAIL=`, `GITHUB=`, and `LINKEDIN=` values in `#contact`.
-   - Adjust the `about` text if you'd like it more personal.
-
-2. **Wire up the contact form (optional)**
-   The form currently validates on the front end only, as the task requires.
-   To actually receive messages, connect it to a free service like
-   [Formspree](https://formspree.io) or [Web3Forms](https://web3forms.com) —
-   just point the `<form>` at their endpoint.
-
 ## Run locally
 Just open `index.html` in a browser, or serve it:
 ```bash
 python3 -m http.server 8080
 ```
 
-## Deploy (pick one)
-- **GitHub Pages**: push this folder to a public GitHub repo → Settings →
-  Pages → deploy from `main` branch.
-- **Vercel**: `npx vercel` inside this folder, or import the GitHub repo at
-  vercel.com.
-- **Netlify**: drag-and-drop this folder at app.netlify.com/drop, or connect
-  the GitHub repo.
-
-## Screenshots for submission
-Take one **desktop** screenshot (~1440px wide) and one **mobile** screenshot
-(~390px wide, browser DevTools device toolbar) after you've swapped in your
-own content and deployed the live link.

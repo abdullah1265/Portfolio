@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Abdullah — Web Developer</title>
+  <meta name="description" content="Portfolio of Muhammad Abdullah, BSCS graduate and front-end web developer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="tabbar" id="tabbar">
+    <div class="tabbar__brand">
+      <span class="brand__prompt">~/</span>
+      <span class="brand__name">m.abdullah</span>
+
+    <button class="tabbar__toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="tabbar__tabs" id="tabNav">
+      <a href="#hero" class="tab" data-tab>
+        <span class="tab__dot" aria-hidden="true"></span>index.html
+      </a>
+      <a href="#about" class="tab" data-tab>about.md</a>
+      <a href="#skills" class="tab" data-tab>skills.json</a>
+      <a href="#projects" class="tab" data-tab>projects.tsx</a>
+      <a href="#contact" class="tab" data-tab>contact.env</a>
+    </nav>
+  </header>
+
+  <main>
+   
+    <section id="hero" class="hero">
+      <div class="hero__inner">
+        <div class="editor-frame">
+          <div class="editor-frame__gutter" id="gutter"></div>
+          <pre class="editor-frame__code"><code id="typedCode"></code><span class="caret" id="caret">&nbsp;</span></pre>
+        </div>
+
+        <div class="hero__meta">
+          <h1 class="hero__title">Muhammad Abdullah</h1>
+          <p class="hero__subtitle">BSCS Graduate&nbsp;·&nbsp;Web Developer</p>
+          <p class="hero__desc">
+            I build fast, responsive interfaces and turn designs into clean,
+            maintainable code — from first commit to production deploy.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--solid">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">scroll ↓</div>
+    </section>
+
+    
+    <section id="about" class="section">
+      <div class="section__head">
+        <span class="section__file">about.md</span>
+        <h2 class="section__title">About</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            I'm Muhammad Abdullah, a BSCS graduate with a focus on front-end
+            web development. I enjoy the moment a static design becomes a
+            living interface — where a layout responds to a screen, a button
+            reacts to a click, and a page feels considered rather than
+            assembled.
+          </p>
+          <p>
+            My work centers on HTML, CSS, and JavaScript, with an emphasis on
+            responsive layouts, clean component structure, and interfaces
+            that hold up on any device. I care as much about how the code is
+            organized as how the final page looks.
+          </p>
+          <p>
+            Currently building projects, sharpening fundamentals, and looking
+            for opportunities to contribute to real-world products as a
+            front-end developer.
+          </p>
+        </div>
+
+        <dl class="about__facts">
+          <div class="fact">
+            <dt>degree</dt>
+            <dd>BSCS</dd>
+          </div>
+          <div class="fact">
+            <dt>focus</dt>
+            <dd>Front-End Development</dd>
+          </div>
+          <div class="fact">
+            <dt>based_in</dt>
+            <dd>Pakistan</dd>
+          </div>
+          <div class="fact">
+            <dt>status</dt>
+            <dd><span class="status-dot"></span>Open to work</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--inset">
+      <div class="section__head">
+        <span class="section__file">skills.json</span>
+        <h2 class="section__title">Skills</h2>
+      </div>
+
+      <div class="skills__grid">
+        <article class="skill-card">
+          <h3 class="skill-card__key">"markup_and_styling"</h3>
+          <ul class="skill-card__list">
+            <li>HTML5</li>
+            <li>CSS3 (Flexbox, Grid)</li>
+            <li>Responsive / Mobile-First Design</li>
+            <li>Sass basics</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-card__key">"scripting"</h3>
+          <ul class="skill-card__list">
+            <li>JavaScript (ES6+)</li>
+            <li>DOM Manipulation</li>
+            <li>Form Validation</li>
+            <li>Fetch / JSON</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-card__key">"tools"</h3>
+          <ul class="skill-card__list">
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+            <li>Vercel / Netlify</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-card__key">"currently_learning"</h3>
+          <ul class="skill-card__list">
+            <li>React</li>
+            <li>Accessibility (WCAG)</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <div class="section__head">
+        <span class="section__file">projects.tsx</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+
+      <div class="projects__grid">
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">component</span>
+            <h3>Weather Dashboard</h3>
+          </div>
+          <p>
+            A responsive weather lookup UI with a searchable city field, unit
+            toggle, and a clean card layout for forecast data.
+          </p>
+          <ul class="project-card__stack">
+            <li>HTML</li><li>CSS Grid</li><li>JavaScript</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link">Live Demo →</a>
+            <a href="#" class="link">Source →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">component</span>
+            <h3>Task Board</h3>
+          </div>
+          <p>
+            A drag-free task manager with add / complete / delete actions,
+            local state persistence, and a mobile-friendly column layout.
+          </p>
+          <ul class="project-card__stack">
+            <li>HTML</li><li>Flexbox</li><li>JavaScript</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link">Live Demo →</a>
+            <a href="#" class="link">Source →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">component</span>
+            <h3>Recipe Finder</h3>
+          </div>
+          <p>
+            A recipe search interface with filter chips, a responsive card
+            grid, and a detail view that adapts from mobile to desktop.
+          </p>
+          <ul class="project-card__stack">
+            <li>HTML</li><li>CSS Grid</li><li>Fetch API</li>
+          </ul>
+          <div class="project-card__links">
+            <a href="#" class="link">Live Demo →</a>
+            <a href="#" class="link">Source →</a>
+          </div>
+        </article>
+      </div>
+
+    </section>
+    <section id="contact" class="section section--inset">
+      <div class="section__head">
+        <span class="section__file">contact.env</span>
+        <h2 class="section__title">Contact</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p>
+            Have a project in mind or an opportunity to discuss? My inbox is
+            open.
+          </p>
+          <div class="contact__row">
+            <span class="contact__key">EMAIL=</span>
+            <span class="contact__value" id="emailValue">abdulshad1265@gmail.com</span>
+            <button class="copy-btn" id="copyBtn" type="button" aria-label="Copy email address">Copy</button>
+          </div>
+          <div class="contact__row">
+            <span class="contact__key">GITHUB=</span>
+            <a class="contact__value contact__value--link" href="#" id="githubLink">github.com/abdullah1265</a>
+          </div>
+          <div class="contact__row">
+            <span class="contact__key">LINKEDIN=</span>
+            <a class="contact__value contact__value--link" href="#" id="linkedinLink">linkedin.com/in/m-abdullah-a3a568301/</a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+            <span class="field__error" id="nameError"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+            <span class="field__error" id="emailError"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="field__error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn--solid btn--full">Send Message</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Muhammad Abdullah. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
